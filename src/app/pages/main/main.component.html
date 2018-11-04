@@ -1,0 +1,16 @@
+<nz-layout style="height: 100%">
+  <nz-header style="background:#388e67; border-bottom: 1px solid #e8e8e8; color: #fff; height: 50px; line-height: 47px;">
+    <app-header></app-header>
+  </nz-header>
+  <nz-layout>
+    <nz-sider [nzCollapsed]="true" [nzCollapsedWidth]="48" style="background:#fff">
+      <app-sider></app-sider>
+    </nz-sider>
+    <nz-content>
+      <app-tabbar [default]="default"></app-tabbar>
+      <ng-template #default>
+        <router-outlet style="height: 100%;"></router-outlet>
+      </ng-template>
+    </nz-content>
+  </nz-layout>
+</nz-layout>

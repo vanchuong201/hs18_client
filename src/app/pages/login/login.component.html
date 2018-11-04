@@ -1,0 +1,28 @@
+<form nz-form [formGroup]="validateForm" class="login-form" (ngSubmit)="submitForm()">
+  <nz-form-item>
+    <nz-form-control>
+      <nz-input-group nzPrefixIcon="anticon anticon-user">
+        <input type="text" nz-input formControlName="username" placeholder="Tên đăng nhập">
+      </nz-input-group>
+      <nz-form-explain *ngIf="validateForm.get('username').dirty && validateForm.get('username').errors">Vui lòng nhập tên đăng nhập!</nz-form-explain>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-control>
+      <nz-input-group nzPrefixIcon="anticon anticon-lock">
+        <input type="password" nz-input formControlName="password" placeholder="Mật khẩu">
+      </nz-input-group>
+      <nz-form-explain *ngIf="validateForm.get('password').dirty && validateForm.get('password').errors">Vui lòng nhập mật khẩu!</nz-form-explain>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-control>
+      <!-- <label nz-checkbox formControlName="remember">
+        <span>Ghi nhớ người dùng</span>
+      </label>
+      <a class="login-form-forgot" class="login-form-forgot">Quên mật khẩu</a> -->
+      <button nz-button class="login-form-button" [nzType]="'primary'">Đăng nhập</button>
+      <div style="text-align: center"><a>Quên mật khẩu</a></div>
+    </nz-form-control>
+  </nz-form-item>
+</form>

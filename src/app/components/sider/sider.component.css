@@ -1,0 +1,15 @@
+.ticket-sider__icon {
+    font-size: 20px !important;
+}
+app-sider .ant-menu-inline-collapsed {
+    width: 48px;
+}
+app-sider .ant-menu-inline-collapsed>.ant-menu-item {
+    padding: 0 !important;
+    text-align: center;
+}
+.active{
+    background-color: #388e67;
+    color: #fff !important;
+    border: none;
+}

@@ -1,0 +1,26 @@
+
+<ul nz-menu [nzMode]="'inline'" [nzSelectable]="false" [nzInlineCollapsed]="true" style="height: 100%; padding-top: 35.7px">
+      <li nz-menu-item routerLinkActive="active">
+          <span title><i nz-icon class="ticket-sider__icon" type="area-chart" theme="outline"></i><span class="nav-text">User</span></span>
+      </li>
+
+      <li [routerLink]="['/events']" nz-menu-item routerLinkActive="active">
+          <span title><i nz-icon class="ticket-sider__icon" type="notification" theme="outline"></i><span class="nav-text">Sự kiện</span></span>
+      </li>
+
+      <li [routerLink]="['/customers']" nz-menu-item routerLinkActive="active">
+          <span title><i nz-icon class="ticket-sider__icon" type="team" theme="outline"></i><span class="nav-text">Khách hàng</span></span>
+      </li>
+
+      <li [routerLink]="['/speakers']" nz-menu-item routerLinkActive="active">
+          <span title><i nz-icon class="ticket-sider__icon" type="solution" theme="outline"></i><span class="nav-text">Diễn giả</span></span>
+      </li>
+
+      <li [routerLink]="['/template']" nz-menu-item routerLinkActive="active">
+          <span title><i nz-icon class="ticket-sider__icon" type="html5" theme="outline"></i><span class="nav-text">Giao diện</span></span>
+      </li>
+
+      <li nz-menu-item routerLinkActive="active">
+          <span title><i nz-icon class="ticket-sider__icon" type="setting" theme="outline"></i><span class="nav-text">Cài đặt</span></span>
+      </li>
+</ul>

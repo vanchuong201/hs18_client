@@ -1,0 +1,26 @@
+<div nz-row>
+  <div nz-col nzSpan="8">
+    <h3 style="color: #fff">Ticket System</h3>
+  </div>
+  <div nz-col nzSpan="8">
+    <nz-input-group [nzSuffix]="suffixIconSearch">
+      <input #s (keyup.enter)="search(s.value)" type="text" nz-input placeholder="Tìm kiếm vé" class="ticket-search">
+    </nz-input-group>
+    <ng-template #suffixIconSearch>
+      <i nz-icon type="search"></i>
+    </ng-template>
+  </div>
+  <div nz-col nzSpan="8" style="text-align:right">
+    <nz-dropdown [nzPlacement]="'bottomRight'">
+      <div nz-dropdown style="height: 100%;display: inline-block">
+        <nz-avatar nzSize="large" [nzText]="user?.avatar" style="color:#f56a00; background-color:#fde3cf;"></nz-avatar>
+        <span style="margin-left: 16px;">{{user?.name}}</span>
+      </div>
+      <ul nz-menu>
+        <li (click)="auth.logout()" nz-menu-item>
+          <a>Đăng xuất</a>
+        </li>
+      </ul>
+    </nz-dropdown>
+  </div>
+</div>

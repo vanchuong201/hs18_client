@@ -1,0 +1,10 @@
+<nz-layout style="height: 100%; font-size: 7px">
+  <nz-sider [nzWidth]="280" style="background-color: rgb(245, 245, 245); height: 100%; border-right: 1px solid #e8e8e8;">
+    <ng-content select=".ticket-item-sider"></ng-content>
+  </nz-sider>
+  <nz-layout style="background: #fff">
+    <nz-content>
+      <ng-content select=".ticket-item-content"></ng-content>
+    </nz-content>
+  </nz-layout>
+</nz-layout>

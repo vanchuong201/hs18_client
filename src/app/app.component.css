@@ -1,0 +1,17 @@
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px grey; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #b4b4b6; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #9b9a9a; 
+}
+ul.ant-pagination.ant-table-pagination.ng-star-inserted{
+    margin-right: 20px
+}

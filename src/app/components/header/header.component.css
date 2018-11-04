@@ -1,0 +1,8 @@
+.ticket-search {
+    background: #fff;
+    border-radius: 16px;
+    border: none;
+}
+.ticket-search:focus {
+    box-shadow: none;
+}
